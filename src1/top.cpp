@@ -1,3 +1,18 @@
+#include <cstdlib>
+#include <cstdio>
+#include <iostream>
+#include "wino_macro.h"
+#include <ap_int.h>
+#include <hls_stream.h>
+
+
+#include "wino_IO.cpp"
+#include "wino_cell.cpp"
+
+
+#include "wino_struct.h"
+#include "wino_systolic_kernel.cpp"
+
 void wino_systolic_top(
     INPUT_PORTS_DECLARE(input_DDR),
     WEIGHT_PORTS_DECLARE(weight_DDR),
